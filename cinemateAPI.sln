@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cinemateAPI", "cinemateAPI\cinemateAPI.csproj", "{91D57887-31B0-4D30-8EDB-B869745DF32C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cinemateAPI.Core", "cinemateAPI.Service\cinemateAPI.Core.csproj", "{C8C35F49-D583-4579-B113-88A5587D5854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cinemateAPI.Data", "cinemateAPI.Data\cinemateAPI.Data.csproj", "{4F908705-F608-4B45-A383-CF861C0A7058}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91D57887-31B0-4D30-8EDB-B869745DF32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D57887-31B0-4D30-8EDB-B869745DF32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D57887-31B0-4D30-8EDB-B869745DF32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D57887-31B0-4D30-8EDB-B869745DF32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C35F49-D583-4579-B113-88A5587D5854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C35F49-D583-4579-B113-88A5587D5854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C35F49-D583-4579-B113-88A5587D5854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C35F49-D583-4579-B113-88A5587D5854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F908705-F608-4B45-A383-CF861C0A7058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F908705-F608-4B45-A383-CF861C0A7058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F908705-F608-4B45-A383-CF861C0A7058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F908705-F608-4B45-A383-CF861C0A7058}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E5B5BA3-C3A9-406B-A02C-2CA815C7944A}
+	EndGlobalSection
+EndGlobal
