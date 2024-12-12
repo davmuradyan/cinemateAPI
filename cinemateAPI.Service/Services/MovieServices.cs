@@ -1,5 +1,6 @@
 ﻿using cinemateAPI.Data.DAO;
 using cinemateAPI.Data.DAO.Entities;
+using Microsoft.IdentityModel.Tokens;
 
 namespace cinemateAPI.Core.Services
 {
@@ -9,7 +10,7 @@ namespace cinemateAPI.Core.Services
         public MovieServices(MainDBContext dbContext) { 
             _dbContext = dbContext;
         }
-        
+       
         public string AddMovie(int mvid, bool liked) {
             bool isAdded = false;
             MovieEntity? movieEntity = _dbContext.Movies.FirstOrDefault(m => m.MovieId == mvid);
@@ -27,6 +28,23 @@ namespace cinemateAPI.Core.Services
             } catch {
                 return "Failed";
             }
+        }
+
+        public ICollection<int> GetMovies() {
+            ICollection<int> ids = new HashSet<int>();
+
+            foreach (var movie in _dbContext.Movies)
+            {
+                if (movie.IsLiked == true)
+                {
+                    ids.Add(movie.MovieId);
+                }
+            }
+
+            if (_dbContext.Movies.IsNullOrEmpty() || ids.IsNullOrEmpty()) {
+                ids.Add(-1);
+            }
+            return ids;
         }
     }
 }

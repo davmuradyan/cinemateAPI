@@ -13,5 +13,10 @@ namespace cinemateAPI.Controllers {
         public IActionResult AddMovie(int mvid, bool liked) {
             return Ok(movieServices.AddMovie(mvid, liked));
         }
+
+        [HttpGet("GetMovies")]
+        public IActionResult GetMovies() {
+            return Ok(movieServices.GetMovies());
+        }
     }
 }
